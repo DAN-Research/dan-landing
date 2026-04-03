@@ -1,0 +1,156 @@
+/* === Reset === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Design Tokens === */
+:root {
+  /* Colors */
+  --color-primary: #0f172a;
+  --color-secondary: #64748b;
+  --color-accent: #2563eb;
+  --color-accent-light: #eff6ff;
+  --color-dark-bg: #0f172a;
+  --color-light-bg: #f8fafc;
+  --color-white: #ffffff;
+  --color-border: #e2e8f0;
+  --color-border-light: #f1f5f9;
+
+  /* Problem-Solution-Result colors */
+  --color-problem-bg: #fef2f2;
+  --color-problem-border: #fecaca;
+  --color-problem-text: #450a0a;
+  --color-problem-label: #dc2626;
+  --color-solution-bg: #eff6ff;
+  --color-solution-border: #bfdbfe;
+  --color-solution-text: #1e3a5f;
+  --color-solution-label: #2563eb;
+  --color-result-bg: #f0fdf4;
+  --color-result-border: #bbf7d0;
+  --color-result-text: #14532d;
+  --color-result-label: #16a34a;
+
+  /* Typography */
+  --font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-size-xs: 0.6875rem;
+  --font-size-sm: 0.75rem;
+  --font-size-base: 0.875rem;
+  --font-size-md: 0.9375rem;
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.375rem;
+  --font-size-2xl: 1.625rem;
+  --font-size-hero: 2.125rem;
+
+  /* Layout */
+  --max-width: 1080px;
+  --section-padding: 80px 24px;
+  --card-gap: 16px;
+  --card-radius: 12px;
+  --nav-height: 64px;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--color-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* === Section backgrounds === */
+.section--white { background: var(--color-white); }
+.section--light { background: var(--color-light-bg); }
+.section--dark  { background: var(--color-dark-bg); color: var(--color-white); }
+
+.section__inner {
+  padding: var(--section-padding);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* === Section header === */
+.section__label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.section--dark .section__label {
+  color: #60a5fa;
+}
+
+.section__title {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.section__subtitle {
+  font-size: var(--font-size-base);
+  color: var(--color-secondary);
+}
+
+.section--dark .section__subtitle {
+  color: #94a3b8;
+}
+
+/* === Buttons === */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn--secondary {
+  background: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+}
+
+/* === Cards (3-column grid) === */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--card-gap);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 56px 20px;
+    --font-size-hero: 1.625rem;
+    --font-size-2xl: 1.375rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
