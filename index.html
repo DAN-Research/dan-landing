@@ -187,6 +187,47 @@
     </div>
   </section>
 
+  <!-- Contact -->
+  <section class="section--light" id="contact">
+    <div class="section__inner contact__inner">
+      <div class="contact__header">
+        <div class="section__label">CONTACT</div>
+        <h2 class="section__title">문의하기</h2>
+        <p class="section__subtitle">프로젝트에 대해 이야기해 보겠습니다.</p>
+      </div>
+      <form class="contact__form" id="contact-form" action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST">
+        <div class="form__field">
+          <label class="form__label" for="name">이름</label>
+          <input class="form__input" type="text" id="name" name="name" placeholder="홍길동" required>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="email">이메일</label>
+          <input class="form__input" type="email" id="email" name="email" placeholder="name@company.com" required>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="message">메시지</label>
+          <textarea class="form__input form__textarea" id="message" name="message" placeholder="프로젝트에 대해 알려주세요..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary contact__submit">보내기</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__left">
+        <div class="footer__logo">DAN Research</div>
+        <div class="footer__copyright">© 2026 DAN Research. All rights reserved.</div>
+      </div>
+      <div class="footer__links">
+        <a href="#" class="footer__link">GitHub</a>
+        <a href="#" class="footer__link">LinkedIn</a>
+        <a href="mailto:contact@danresearch.com" class="footer__link">Email</a>
+      </div>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
