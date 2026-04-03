@@ -71,6 +71,87 @@
     </div>
   </section>
 
+  <!-- Portfolio -->
+  <section class="section--white" id="portfolio">
+    <div class="section__inner">
+      <div class="portfolio__header">
+        <div class="section__label">PORTFOLIO</div>
+        <h2 class="section__title">이런 문제를 풀어왔습니다</h2>
+      </div>
+
+      <!-- Project 1 -->
+      <div class="project">
+        <div class="project__header">
+          <div>
+            <div class="project__number">PROJECT 01</div>
+            <h3 class="project__title">ELW/ELS LP 트레이딩 시스템</h3>
+          </div>
+          <div class="project__tags">
+            <span class="tag">Java</span>
+            <span class="tag">React</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">WPF</span>
+          </div>
+        </div>
+        <div class="project__psr">
+          <div class="psr psr--problem">
+            <div class="psr__label">PROBLEM</div>
+            <p class="psr__text">기존 LP 시스템의 호가 지연과 수동 운영으로 스프레드 손실 발생. 다수 종목 동시 관리 어려움.</p>
+          </div>
+          <div class="psr__arrow">→</div>
+          <div class="psr psr--solution">
+            <div class="psr__label">SOLUTION</div>
+            <p class="psr__text">초저지연 호가 엔진 + 실시간 리스크 모니터링 + 웹/데스크톱 이중 클라이언트 구축.</p>
+          </div>
+          <div class="psr__arrow">→</div>
+          <div class="psr psr--result">
+            <div class="psr__label">RESULT</div>
+            <p class="psr__text">호가 응답 &lt; 1ms. 수백 종목 동시 운영. 실시간 포지션·손익 대시보드.</p>
+          </div>
+        </div>
+        <div class="project__arch">
+          <div class="project__arch-label">ARCHITECTURE</div>
+          <div class="project__arch-diagram">
+            <div class="arch-node">HFT Server<span>Java 21</span></div>
+            <div class="arch-connector">⟷</div>
+            <div class="arch-node">API Gateway<span>FastAPI</span></div>
+            <div class="arch-connector">⟷</div>
+            <div class="arch-clients">
+              <div class="arch-node arch-node--sm">Web Dashboard <span>React</span></div>
+              <div class="arch-node arch-node--sm">Desktop Client <span>WPF</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project">
+        <div class="project__header">
+          <div>
+            <div class="project__number">PROJECT 02</div>
+            <h3 class="project__title">시장조성 + ETF LP 통합헤지</h3>
+          </div>
+        </div>
+        <div class="project__psr">
+          <div class="psr psr--problem">
+            <div class="psr__label">PROBLEM</div>
+            <p class="psr__text">시장조성과 ETF LP의 헤지를 별도로 운영해 리스크 노출이 중복되고 비효율 발생.</p>
+          </div>
+          <div class="psr__arrow">→</div>
+          <div class="psr psr--solution">
+            <div class="psr__label">SOLUTION</div>
+            <p class="psr__text">포지션 통합 관리 + 자동 헤지 실행 엔진으로 리스크를 단일 뷰에서 제어.</p>
+          </div>
+          <div class="psr__arrow">→</div>
+          <div class="psr psr--result">
+            <div class="psr__label">RESULT</div>
+            <p class="psr__text">헤지 비용 절감. 리스크 노출 실시간 파악. 운영 인력 부담 감소.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script src="script.js"></script>
 </body>
 </html>
