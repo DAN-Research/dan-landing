@@ -33,15 +33,15 @@
   </nav>
 
   <!-- Hero -->
-  <section class="section--white hero" id="hero">
+  <section class="section--hero hero" id="hero">
     <div class="section__inner hero__inner">
       <div class="section__label">FINANCIAL TECHNOLOGY PARTNER</div>
       <h1 class="hero__title">
-        호가가 늦으면<br>스프레드가 벌어집니다.
+        종목은 늘어나는데,<br>시스템이 발목을 잡고 있나요?
       </h1>
       <p class="hero__subtitle">
-        DAN Research는 증권사의 LP·시장조성 현장에서<br>
-        실제 문제를 기술로 해결하는 금융 소프트웨어 기업입니다.
+        DAN Research는 트레이딩에만 집중할 수 있도록,<br>
+        시스템을 설계하고 운영합니다.
       </p>
       <div class="hero__cta">
         <a href="#portfolio" class="btn btn--primary">해결 사례 보기</a>
@@ -51,18 +51,18 @@
   </section>
 
   <!-- About -->
-  <section class="section--light" id="about">
+  <section class="section--white" id="about">
     <div class="section__inner">
       <div class="about__header">
         <div class="section__label">ABOUT</div>
         <h2 class="section__title">현장의 문제를 아는 팀</h2>
-        <p class="section__subtitle">금융 도메인 깊은 이해 + 엔지니어링 역량을 함께 갖춘 조직입니다.</p>
+        <p class="section__subtitle">금융을 이해하는 엔지니어가, 현장에서 함께 문제를 풉니다.</p>
       </div>
       <div class="card-grid about__cards">
         <div class="about__card">
           <div class="about__card-icon">📊</div>
           <h3 class="about__card-title">도메인 전문성</h3>
-          <p class="about__card-desc">LP 호가, 시장조성, ETF 헤지 — 트레이딩 데스크 옆에서 문제를 진단합니다.</p>
+          <p class="about__card-desc">시장조성, 차익거래, ETF LP — 트레이딩 데스크 옆에서 문제를 진단합니다.</p>
         </div>
         <div class="about__card">
           <div class="about__card-icon">⚙️</div>
@@ -79,7 +79,7 @@
   </section>
 
   <!-- Portfolio -->
-  <section class="section--white" id="portfolio">
+  <section class="section--light" id="portfolio">
     <div class="section__inner">
       <div class="portfolio__header">
         <div class="section__label">PORTFOLIO</div>
@@ -91,41 +91,97 @@
         <div class="project__header">
           <div>
             <div class="project__number">PROJECT 01</div>
-            <h3 class="project__title">ELW/ELS LP 트레이딩 시스템</h3>
-          </div>
-          <div class="project__tags">
-            <span class="tag">Java</span>
-            <span class="tag">React</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">WPF</span>
+            <h3 class="project__title">주식파생 시장조성 / 차익거래</h3>
           </div>
         </div>
-        <div class="project__psr">
-          <div class="psr psr--problem">
+        <div class="project__psr project__psr--vertical">
+          <div class="psr psr--problem psr--large">
             <div class="psr__label">PROBLEM</div>
-            <p class="psr__text">기존 LP 시스템의 호가 지연과 수동 운영으로 스프레드 손실 발생. 다수 종목 동시 관리 어려움.</p>
+            <p class="psr__title">종목이 수백 개인데, 사람이 하나씩 챙겨야 합니다.</p>
+            <p class="psr__desc">공시 확인, 배당 반영, 잔고 관리, 호가 운영 — 종목마다 해야 할 일이 쌓입니다. 한 종목이라도 놓치면 바로 손실로 이어집니다.</p>
           </div>
-          <div class="psr__arrow">→</div>
-          <div class="psr psr--solution">
+          <div class="psr__arrow psr__arrow--down">↓</div>
+          <div class="psr psr--solution psr--large">
             <div class="psr__label">SOLUTION</div>
-            <p class="psr__text">초저지연 호가 엔진 + 실시간 리스크 모니터링 + 웹/데스크톱 이중 클라이언트 구축.</p>
+            <p class="psr__title">전부 자동화하고, 이상 상황만 알려주는 시스템.</p>
+            <p class="psr__desc">공시 자동 파싱, 배당·잔고 자동 반영, 종목 일괄 관리. 사람은 예외 상황에만 개입합니다.</p>
           </div>
-          <div class="psr__arrow">→</div>
-          <div class="psr psr--result">
+          <div class="psr__arrow psr__arrow--down">↓</div>
+          <div class="psr psr--result psr--large">
             <div class="psr__label">RESULT</div>
-            <p class="psr__text">호가 응답 &lt; 1ms. 수백 종목 동시 운영. 실시간 포지션·손익 대시보드.</p>
+            <p class="psr__title">트레이더가 관리 대신 매매에만 집중합니다.</p>
+            <p class="psr__desc">수백 종목을 동시에 운영하면서도 운영 리스크는 최소화. 시스템이 관리하고, 사람은 판단합니다.</p>
+          </div>
+        </div>
+        <div class="project__strategies">
+          <div class="project__strategies-group">
+            <div class="project__strategies-label">구현 전략</div>
+            <div class="project__strategies-list">
+              <span class="strategy-tag">개별주식 차익거래</span>
+              <span class="strategy-tag">지수 차익거래</span>
+              <span class="strategy-tag">시장조성 옵션 매매</span>
+            </div>
+          </div>
+          <div class="project__strategies-group">
+            <div class="project__strategies-label">주요 기능</div>
+            <div class="project__strategies-list">
+              <span class="strategy-tag strategy-tag--feature">자동 호가 엔진</span>
+              <span class="strategy-tag strategy-tag--feature">실시간 포지션·손익 모니터링</span>
+              <span class="strategy-tag strategy-tag--feature">종목 그룹 일괄 관리</span>
+              <span class="strategy-tag strategy-tag--feature">리스크 한도 관리</span>
+              <span class="strategy-tag strategy-tag--feature">백테스트</span>
+              <span class="strategy-tag strategy-tag--feature">사후 거래 분석</span>
+            </div>
           </div>
         </div>
         <div class="project__arch">
-          <div class="project__arch-label">ARCHITECTURE</div>
-          <div class="project__arch-diagram">
-            <div class="arch-node">HFT Server<span>Java 21</span></div>
-            <div class="arch-connector">⟷</div>
-            <div class="arch-node">API Gateway<span>FastAPI</span></div>
-            <div class="arch-connector">⟷</div>
-            <div class="arch-clients">
-              <div class="arch-node arch-node--sm">Web Dashboard <span>React</span></div>
-              <div class="arch-node arch-node--sm">Desktop Client <span>WPF</span></div>
+          <p class="project__arch-intro">호가 엔진부터 모니터링 대시보드까지, 하나의 시스템으로 만들었습니다.</p>
+          <div class="project__arch-label">SYSTEM OVERVIEW</div>
+          <svg class="arch-svg" viewBox="0 0 720 170" xmlns="http://www.w3.org/2000/svg">
+            <!-- KRX -->
+            <rect x="20" y="20" width="160" height="80" rx="10" fill="#f3f3f0" stroke="#d4d4d4"/>
+            <text x="100" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">거래소 (KRX)</text>
+            <text x="100" y="72" text-anchor="middle" font-size="11" fill="#6b6b6b">시세 수신 · 주문 전송</text>
+            <text x="100" y="130" text-anchor="middle" font-size="11" fill="#1a1a1a">시장 데이터의</text>
+            <text x="100" y="147" text-anchor="middle" font-size="11" fill="#1a1a1a">시작과 끝</text>
+            <!-- Bidirectional Arrow 1 -->
+            <line x1="190" y1="55" x2="250" y2="55" stroke="#d4d4d4" stroke-width="2"/>
+            <polygon points="250,50 260,55 250,60" fill="#d4d4d4"/>
+            <line x1="260" y1="65" x2="200" y2="65" stroke="#d4d4d4" stroke-width="2"/>
+            <polygon points="200,60 190,65 200,70" fill="#d4d4d4"/>
+            <!-- Server -->
+            <rect x="270" y="10" width="200" height="100" rx="12" fill="#1a1a1a"/>
+            <text x="370" y="48" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">서버</text>
+            <text x="370" y="70" text-anchor="middle" font-size="11" fill="#c9a827">전략 실행 · 호가 · 리스크</text>
+            <text x="370" y="88" text-anchor="middle" font-size="11" fill="#999">시스템의 핵심</text>
+            <text x="370" y="135" text-anchor="middle" font-size="11" fill="#1a1a1a">전략 로직, 주문 처리,</text>
+            <text x="370" y="152" text-anchor="middle" font-size="11" fill="#1a1a1a">리스크 관리를 수행</text>
+            <!-- Bidirectional Arrow 2 -->
+            <line x1="480" y1="55" x2="540" y2="55" stroke="#d4d4d4" stroke-width="2"/>
+            <polygon points="540,50 550,55 540,60" fill="#d4d4d4"/>
+            <line x1="550" y1="65" x2="490" y2="65" stroke="#d4d4d4" stroke-width="2"/>
+            <polygon points="490,60 480,65 490,70" fill="#d4d4d4"/>
+            <!-- Web · Desktop -->
+            <rect x="560" y="20" width="150" height="80" rx="10" fill="#faf6eb" stroke="#e8dbb3"/>
+            <text x="635" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="#3d3510">Web · Desktop</text>
+            <text x="635" y="72" text-anchor="middle" font-size="11" fill="#92700a">모니터링 · 조작</text>
+            <text x="635" y="130" text-anchor="middle" font-size="11" fill="#1a1a1a">트레이더가 직접</text>
+            <text x="635" y="147" text-anchor="middle" font-size="11" fill="#1a1a1a">사용하는 화면</text>
+          </svg>
+          <div class="project__screenshots">
+            <div class="project__screenshot">
+              <div class="screenshot-placeholder">
+                <span>대시보드 메인 화면</span>
+                <span class="screenshot-placeholder__sub">스크린샷 교체 예정</span>
+              </div>
+              <div class="screenshot-caption">실시간 대시보드 — 종목별 상태를 한눈에 파악</div>
+            </div>
+            <div class="project__screenshot">
+              <div class="screenshot-placeholder">
+                <span>포지션 모니터링</span>
+                <span class="screenshot-placeholder__sub">스크린샷 교체 예정</span>
+              </div>
+              <div class="screenshot-caption">포지션 현황 — 종목별 포지션·손익 실시간 추적</div>
             </div>
           </div>
         </div>
@@ -136,23 +192,73 @@
         <div class="project__header">
           <div>
             <div class="project__number">PROJECT 02</div>
-            <h3 class="project__title">시장조성 + ETF LP 통합헤지</h3>
+            <h3 class="project__title">ETF LP (Market Making & 통합헤지)</h3>
           </div>
         </div>
-        <div class="project__psr">
-          <div class="psr psr--problem">
+        <div class="project__psr project__psr--vertical">
+          <div class="psr psr--problem psr--large">
             <div class="psr__label">PROBLEM</div>
-            <p class="psr__text">시장조성과 ETF LP의 헤지를 별도로 운영해 리스크 노출이 중복되고 비효율 발생.</p>
+            <p class="psr__title">NAV 차익, 스프레드 전략, 포트폴리오 헤지를 따로 돌리고 있습니다.</p>
+            <p class="psr__desc">전략마다 별도 시스템, 별도 모니터링. 기회는 놓치고, 헤지는 중복되고, 비효율이 쌓입니다.</p>
           </div>
-          <div class="psr__arrow">→</div>
-          <div class="psr psr--solution">
+          <div class="psr__arrow psr__arrow--down">↓</div>
+          <div class="psr psr--solution psr--large">
             <div class="psr__label">SOLUTION</div>
-            <p class="psr__text">포지션 통합 관리 + 자동 헤지 실행 엔진으로 리스크를 단일 뷰에서 제어.</p>
+            <p class="psr__title">다중 전략과 통합 헤지를 하나의 시스템으로.</p>
+            <p class="psr__desc">NAV 차익 자동 포착, 스프레드 기반 수익 전략, 포트폴리오 통합 헤지가 하나의 엔진에서 돌아갑니다.</p>
           </div>
-          <div class="psr__arrow">→</div>
-          <div class="psr psr--result">
+          <div class="psr__arrow psr__arrow--down">↓</div>
+          <div class="psr psr--result psr--large">
             <div class="psr__label">RESULT</div>
-            <p class="psr__text">헤지 비용 절감. 리스크 노출 실시간 파악. 운영 인력 부담 감소.</p>
+            <p class="psr__title">헤지 비용은 줄이고, 수익 기회는 극대화.</p>
+            <p class="psr__desc">전략 간 포지션이 자동으로 상계되고, 리스크를 실시간으로 파악할 수 있게 됐습니다.</p>
+          </div>
+        </div>
+        <div class="project__strategies">
+          <div class="project__strategies-label">구현 전략</div>
+          <div class="project__strategies-list">
+            <span class="strategy-tag">NAV 차익 자동 포착</span>
+            <span class="strategy-tag">스프레드 기반 수익 전략</span>
+            <span class="strategy-tag">포트폴리오 통합 헤지</span>
+          </div>
+        </div>
+        <div class="project__arch">
+          <p class="project__arch-intro">세 가지 전략이 하나의 엔진에서 돌아갑니다.</p>
+          <div class="project__arch-label">STRATEGY OVERVIEW</div>
+          <svg class="arch-svg" viewBox="0 0 720 180" xmlns="http://www.w3.org/2000/svg">
+            <!-- 3 Strategy boxes -->
+            <rect x="0" y="20" width="200" height="70" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
+            <text x="100" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a5f">NAV 차익 포착</text>
+            <text x="100" y="70" text-anchor="middle" font-size="10" fill="#64748b">실시간 괴리율 모니터링</text>
+
+            <rect x="260" y="20" width="200" height="70" rx="8" fill="#f0fdf4" stroke="#bbf7d0"/>
+            <text x="360" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">스프레드 전략</text>
+            <text x="360" y="70" text-anchor="middle" font-size="10" fill="#64748b">Market Making</text>
+
+            <rect x="520" y="20" width="200" height="70" rx="8" fill="#fef3c7" stroke="#fde68a"/>
+            <text x="620" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#78350f">포트폴리오 헤지</text>
+            <text x="620" y="70" text-anchor="middle" font-size="10" fill="#64748b">통합 리스크 관리</text>
+
+            <!-- Arrows down -->
+            <line x1="100" y1="95" x2="100" y2="115" stroke="#cbd5e1" stroke-width="2"/>
+            <polygon points="95,115 100,125 105,115" fill="#cbd5e1"/>
+            <line x1="360" y1="95" x2="360" y2="115" stroke="#cbd5e1" stroke-width="2"/>
+            <polygon points="355,115 360,125 365,115" fill="#cbd5e1"/>
+            <line x1="620" y1="95" x2="620" y2="115" stroke="#cbd5e1" stroke-width="2"/>
+            <polygon points="615,115 620,125 625,115" fill="#cbd5e1"/>
+
+            <!-- Unified Engine -->
+            <rect x="60" y="125" width="600" height="50" rx="10" fill="#0f172a"/>
+            <text x="360" y="155" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">통합 실행 엔진</text>
+          </svg>
+          <div class="project__screenshots">
+            <div class="project__screenshot">
+              <div class="screenshot-placeholder">
+                <span>포트폴리오 현황</span>
+                <span class="screenshot-placeholder__sub">스크린샷 교체 예정</span>
+              </div>
+              <div class="screenshot-caption">포트폴리오 현황 — 전략별 포지션·헤지 상태 통합 뷰</div>
+            </div>
           </div>
         </div>
       </div>
@@ -165,7 +271,7 @@
       <div class="capability__header">
         <div class="section__label">WHY DAN</div>
         <h2 class="section__title">기술, 로직, 경험을 함께 갖춘 팀</h2>
-        <p class="section__subtitle">코드만 짜는 외주가 아닙니다. 금융 현장을 이해하는 엔지니어링 파트너입니다.</p>
+        <p class="section__subtitle">금융 현장을 이해하는 엔지니어링 파트너입니다.</p>
       </div>
       <div class="card-grid capability__cards">
         <div class="capability__card">
@@ -183,8 +289,8 @@
         <div class="capability__card">
           <div class="capability__card-icon capability__card-icon--exp">🏛️</div>
           <div class="capability__card-label capability__card-label--exp">경험</div>
-          <h3 class="capability__card-title">실거래 환경에서<br>검증된 운영 경험</h3>
-          <p class="capability__card-desc">장중 장애 대응, 장 시작/종료 경계 처리, 거래소 정책 변경 대응 — 실거래를 돌려본 팀만 아는 것들을 알고 있습니다.</p>
+          <h3 class="capability__card-title">시장조성과 ETF LP<br>실전 운영 경험</h3>
+          <p class="capability__card-desc">시장조성, 차익거래, ETF LP 시스템을 직접 구축하고 실거래 환경에서 운영해 본 팀입니다. 현장을 아는 만큼, 현장에 맞는 시스템을 만듭니다.</p>
         </div>
       </div>
       <div class="capability__footer">
