@@ -107,140 +107,100 @@
         </div>
       </div>
 
-      <!-- 구현 사례 소개 -->
+      <!-- DAN OMS -->
       <div class="portfolio__cases-header">
-        <p class="portfolio__cases-intro">이 문제를 두 영역에서 풀었습니다.</p>
+        <p class="portfolio__cases-intro">DAN OMS</p>
+        <p class="section__subtitle">세 가지 모듈이 하나의 통합 OMS 위에서 돌아갑니다.</p>
       </div>
 
-      <!-- Case 1 -->
-      <div class="project">
-        <div class="project__header">
-          <div>
-            <h3 class="project__title">주식파생 시장조성 / 차익거래</h3>
+      <!-- 아키텍처 다이어그램 -->
+      <div class="project__arch">
+        <div class="project__arch-label">SYSTEM ARCHITECTURE</div>
+        <svg class="arch-svg" viewBox="0 0 720 230" xmlns="http://www.w3.org/2000/svg">
+          <!-- 3 Modules -->
+          <rect x="0" y="10" width="210" height="80" rx="10" fill="#2a2a2a" stroke="#3a3a3a"/>
+          <text x="105" y="42" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">시장조성</text>
+          <text x="105" y="64" text-anchor="middle" font-size="11" fill="#999">옵션 호가 · 의무 이행</text>
+
+          <rect x="255" y="10" width="210" height="80" rx="10" fill="#2a2a2a" stroke="#3a3a3a"/>
+          <text x="360" y="42" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">차익거래</text>
+          <text x="360" y="64" text-anchor="middle" font-size="11" fill="#999">개별주식 · 지수 선물</text>
+
+          <rect x="510" y="10" width="210" height="80" rx="10" fill="#2a2a2a" stroke="#3a3a3a"/>
+          <text x="615" y="42" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">ETF LP</text>
+          <text x="615" y="64" text-anchor="middle" font-size="11" fill="#999">NAV 차익 · MM · 헤지</text>
+
+          <!-- Arrows down -->
+          <line x1="105" y1="95" x2="105" y2="120" stroke="#555" stroke-width="2"/>
+          <polygon points="100,120 105,130 110,120" fill="#555"/>
+          <line x1="360" y1="95" x2="360" y2="120" stroke="#555" stroke-width="2"/>
+          <polygon points="355,120 360,130 365,120" fill="#555"/>
+          <line x1="615" y1="95" x2="615" y2="120" stroke="#555" stroke-width="2"/>
+          <polygon points="610,120 615,130 620,120" fill="#555"/>
+
+          <!-- 통합 OMS -->
+          <rect x="30" y="130" width="660" height="60" rx="12" fill="#c9a827"/>
+          <text x="360" y="158" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a">통합 OMS</text>
+          <text x="360" y="178" text-anchor="middle" font-size="11" fill="#3d3510">주문 관리 · 리스크 · 모니터링 · 대시보드</text>
+        </svg>
+      </div>
+
+      <!-- 3 모듈 세부 기능 -->
+      <div class="modules-grid">
+        <div class="module-card">
+          <h3 class="module-card__title">시장조성</h3>
+          <div class="module-card__features">
+            <span class="strategy-tag">주식·지수 파생 시장조성</span>
+            <span class="strategy-tag">자동 의무호가 제출</span>
+            <span class="strategy-tag">의무 점수 관리</span>
+            <span class="strategy-tag">그릭스 헤지</span>
           </div>
         </div>
-        <div class="project__strategies">
-          <div class="project__strategies-group">
-            <div class="project__strategies-label">구현 전략</div>
-            <div class="project__strategies-list">
-              <span class="strategy-tag">개별주식 차익거래</span>
-              <span class="strategy-tag">지수 차익거래</span>
-              <span class="strategy-tag">시장조성 옵션 매매</span>
-            </div>
-          </div>
-          <div class="project__strategies-group">
-            <div class="project__strategies-label">주요 기능</div>
-            <div class="project__strategies-list">
-              <span class="strategy-tag strategy-tag--feature">자동 호가 엔진</span>
-              <span class="strategy-tag strategy-tag--feature">실시간 포지션·손익 모니터링</span>
-              <span class="strategy-tag strategy-tag--feature">종목 그룹 일괄 관리</span>
-              <span class="strategy-tag strategy-tag--feature">리스크 한도 관리</span>
-              <span class="strategy-tag strategy-tag--feature">백테스트</span>
-              <span class="strategy-tag strategy-tag--feature">사후 거래 분석</span>
-            </div>
+        <div class="module-card">
+          <h3 class="module-card__title">차익거래</h3>
+          <div class="module-card__features">
+            <span class="strategy-tag">개별주식 차익거래</span>
+            <span class="strategy-tag">지수 차익거래</span>
+            <span class="strategy-tag">스프레드 매매</span>
+            <span class="strategy-tag">공시 및 배당 자동 관리</span>
           </div>
         </div>
-        <div class="project__arch">
-          <p class="project__arch-intro">호가 엔진부터 모니터링 대시보드까지, 하나의 시스템으로 만들었습니다.</p>
-          <div class="project__arch-label">SYSTEM OVERVIEW</div>
-          <svg class="arch-svg" viewBox="0 0 720 170" xmlns="http://www.w3.org/2000/svg">
-            <!-- KRX -->
-            <rect x="20" y="20" width="160" height="80" rx="10" fill="#2a2a2a" stroke="#3a3a3a"/>
-            <text x="100" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">거래소 (KRX)</text>
-            <text x="100" y="72" text-anchor="middle" font-size="11" fill="#999">시세 수신 · 주문 전송</text>
-            <text x="100" y="130" text-anchor="middle" font-size="11" fill="#cccccc">시장 데이터의</text>
-            <text x="100" y="147" text-anchor="middle" font-size="11" fill="#cccccc">시작과 끝</text>
-            <!-- Bidirectional Arrow 1 -->
-            <line x1="190" y1="55" x2="250" y2="55" stroke="#555" stroke-width="2"/>
-            <polygon points="250,50 260,55 250,60" fill="#555"/>
-            <line x1="260" y1="65" x2="200" y2="65" stroke="#555" stroke-width="2"/>
-            <polygon points="200,60 190,65 200,70" fill="#555"/>
-            <!-- Server -->
-            <rect x="270" y="10" width="200" height="100" rx="12" fill="#c9a827"/>
-            <text x="370" y="48" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a1a">서버</text>
-            <text x="370" y="70" text-anchor="middle" font-size="11" fill="#3d3510">전략 실행 · 호가 · 리스크</text>
-            <text x="370" y="88" text-anchor="middle" font-size="11" fill="#5a4e10">시스템의 핵심</text>
-            <text x="370" y="135" text-anchor="middle" font-size="11" fill="#cccccc">전략 로직, 주문 처리,</text>
-            <text x="370" y="152" text-anchor="middle" font-size="11" fill="#cccccc">리스크 관리를 수행</text>
-            <!-- Bidirectional Arrow 2 -->
-            <line x1="480" y1="55" x2="540" y2="55" stroke="#555" stroke-width="2"/>
-            <polygon points="540,50 550,55 540,60" fill="#555"/>
-            <line x1="550" y1="65" x2="490" y2="65" stroke="#555" stroke-width="2"/>
-            <polygon points="490,60 480,65 490,70" fill="#555"/>
-            <!-- Web · Desktop -->
-            <rect x="560" y="20" width="150" height="80" rx="10" fill="#2a2a2a" stroke="#3a3a3a"/>
-            <text x="635" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Web · Desktop</text>
-            <text x="635" y="72" text-anchor="middle" font-size="11" fill="#999">모니터링 · 조작</text>
-            <text x="635" y="130" text-anchor="middle" font-size="11" fill="#cccccc">트레이더가 직접</text>
-            <text x="635" y="147" text-anchor="middle" font-size="11" fill="#cccccc">사용하는 화면</text>
-          </svg>
-          <div class="project__screenshots">
-            <div class="project__screenshot">
-              <img src="assets/dashboard.png" alt="실시간 대시보드" loading="lazy">
-              <div class="screenshot-caption">실시간 대시보드 — 손익, 체결, 호가, 서버 상태를 한눈에</div>
-            </div>
-            <div class="project__screenshot">
-              <img src="assets/book-pnl.png" alt="북 상세 손익" loading="lazy">
-              <div class="screenshot-caption">북 상세 손익 — 북별 이론·평가·실현 손익 실시간 추적</div>
-            </div>
+        <div class="module-card">
+          <h3 class="module-card__title">ETF LP</h3>
+          <div class="module-card__features">
+            <span class="strategy-tag">NAV 차익 자동 포착</span>
+            <span class="strategy-tag">스프레드 기반 수익 전략</span>
+            <span class="strategy-tag">포트폴리오 통합 헤지</span>
           </div>
         </div>
       </div>
 
-      <!-- Case 2 -->
-      <div class="project">
-        <div class="project__header">
-          <div>
-            <h3 class="project__title">ETF LP (Market Making & 통합헤지)</h3>
+      <!-- 공통 기능 -->
+      <div class="project__strategies" style="margin-top: 24px;">
+        <div class="project__strategies-group">
+          <div class="project__strategies-label">공통 기능</div>
+          <div class="project__strategies-list">
+            <span class="strategy-tag strategy-tag--feature">자동 호가 엔진</span>
+            <span class="strategy-tag strategy-tag--feature">리스크 한도 관리</span>
+            <span class="strategy-tag strategy-tag--feature">실시간 포지션·손익 모니터링</span>
+            <span class="strategy-tag strategy-tag--feature">종목 그룹 일괄 관리</span>
+            <span class="strategy-tag strategy-tag--feature">백테스트</span>
+            <span class="strategy-tag strategy-tag--feature">사후 거래 분석</span>
+            <span class="strategy-tag strategy-tag--feature">규제 및 컴플라이언스 준수</span>
           </div>
         </div>
-        <div class="project__strategies">
-          <div class="project__strategies-group">
-            <div class="project__strategies-label">구현 전략</div>
-            <div class="project__strategies-list">
-              <span class="strategy-tag">NAV 차익 자동 포착</span>
-              <span class="strategy-tag">스프레드 기반 수익 전략</span>
-              <span class="strategy-tag">포트폴리오 통합 헤지</span>
-            </div>
+      </div>
+
+      <!-- 스크린샷 -->
+      <div class="project__arch" style="margin-top: 24px;">
+        <div class="project__screenshots">
+          <div class="project__screenshot">
+            <img src="assets/dashboard.png" alt="실시간 대시보드" loading="lazy">
+            <div class="screenshot-caption">실시간 대시보드 — 손익, 체결, 호가, 서버 상태를 한눈에</div>
           </div>
-        </div>
-        <div class="project__arch">
-          <p class="project__arch-intro">세 가지 전략이 하나의 엔진에서 돌아갑니다.</p>
-          <div class="project__arch-label">STRATEGY OVERVIEW</div>
-          <svg class="arch-svg" viewBox="0 0 720 180" xmlns="http://www.w3.org/2000/svg">
-            <!-- 3 Strategy boxes -->
-            <rect x="0" y="20" width="200" height="70" rx="8" fill="#2a2a2a" stroke="#3a3a3a"/>
-            <text x="100" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">NAV 차익 포착</text>
-            <text x="100" y="70" text-anchor="middle" font-size="10" fill="#999">실시간 괴리율 모니터링</text>
-
-            <rect x="260" y="20" width="200" height="70" rx="8" fill="#2a2a2a" stroke="#3a3a3a"/>
-            <text x="360" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">스프레드 전략</text>
-            <text x="360" y="70" text-anchor="middle" font-size="10" fill="#999">Market Making</text>
-
-            <rect x="520" y="20" width="200" height="70" rx="8" fill="#2a2a2a" stroke="#3a3a3a"/>
-            <text x="620" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">포트폴리오 헤지</text>
-            <text x="620" y="70" text-anchor="middle" font-size="10" fill="#999">통합 리스크 관리</text>
-
-            <!-- Arrows down -->
-            <line x1="100" y1="95" x2="100" y2="115" stroke="#555" stroke-width="2"/>
-            <polygon points="95,115 100,125 105,115" fill="#555"/>
-            <line x1="360" y1="95" x2="360" y2="115" stroke="#555" stroke-width="2"/>
-            <polygon points="355,115 360,125 365,115" fill="#555"/>
-            <line x1="620" y1="95" x2="620" y2="115" stroke="#555" stroke-width="2"/>
-            <polygon points="615,115 620,125 625,115" fill="#555"/>
-
-            <!-- Unified Engine -->
-            <rect x="60" y="125" width="600" height="50" rx="10" fill="#c9a827"/>
-            <text x="360" y="155" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">통합 실행 엔진</text>
-          </svg>
-          <div class="project__screenshots">
-            <div class="project__screenshot">
-              <div class="screenshot-placeholder">
-                <span>포트폴리오 현황</span>
-                <span class="screenshot-placeholder__sub">스크린샷 교체 예정</span>
-              </div>
-              <div class="screenshot-caption">포트폴리오 현황 — 전략별 포지션·헤지 상태 통합 뷰</div>
-            </div>
+          <div class="project__screenshot">
+            <img src="assets/book-pnl.png" alt="북 상세 손익" loading="lazy">
+            <div class="screenshot-caption">북 상세 손익 — 북별 이론·평가·실현 손익 실시간 추적</div>
           </div>
         </div>
       </div>
