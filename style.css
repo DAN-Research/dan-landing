@@ -537,13 +537,19 @@ body {
 /* Screenshots */
 .project__screenshots {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
   margin-top: 24px;
 }
 
 .project__screenshots .project__screenshot {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .project__screenshots {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project__screenshot {
