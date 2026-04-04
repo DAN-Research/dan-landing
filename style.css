@@ -20,19 +20,19 @@
   --color-border: #d4d4d4;
   --color-border-light: #ebebeb;
 
-  /* Problem-Solution-Result colors */
-  --color-problem-bg: #fef2f2;
-  --color-problem-border: #fecaca;
-  --color-problem-text: #450a0a;
-  --color-problem-label: #dc2626;
+  /* Problem-Solution-Result colors (charcoal+brass tone) */
+  --color-problem-bg: #f5f0f0;
+  --color-problem-border: #d4c8c8;
+  --color-problem-text: #3d2020;
+  --color-problem-label: #8a4040;
   --color-solution-bg: #faf6eb;
   --color-solution-border: #e8dbb3;
   --color-solution-text: #3d3510;
   --color-solution-label: #92700a;
-  --color-result-bg: #f0fdf4;
-  --color-result-border: #bbf7d0;
-  --color-result-text: #14532d;
-  --color-result-label: #16a34a;
+  --color-result-bg: #f2f2ec;
+  --color-result-border: #d4d4c0;
+  --color-result-text: #2a2a1a;
+  --color-result-label: #5a5a20;
 
   /* Typography */
   --font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -348,6 +348,18 @@ body {
   margin-bottom: 40px;
 }
 
+.portfolio__cases-header {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.portfolio__cases-intro {
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  color: var(--color-primary);
+  text-align: center;
+}
+
 .project {
   background: var(--color-light-bg);
   border-radius: 16px;
@@ -474,10 +486,10 @@ body {
 /* Architecture SVG diagram */
 .project__arch {
   margin-top: 20px;
-  padding: 20px 24px;
-  background: var(--color-white);
+  padding: 28px 24px;
+  background: var(--color-dark-bg);
   border-radius: 10px;
-  border: 1px solid var(--color-border);
+  color: var(--color-white);
 }
 
 /* Strategy tags */
@@ -533,17 +545,17 @@ body {
 .project__screenshot {
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid var(--color-border);
+  border: 1px solid #3a3a3a;
 }
 
 .screenshot-placeholder {
-  background: #f3f3f0;
+  background: #2a2a2a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 200px;
-  color: var(--color-secondary);
+  color: #999;
   font-size: var(--font-size-base);
   font-weight: 600;
   gap: 8px;
@@ -552,7 +564,7 @@ body {
 .screenshot-placeholder__sub {
   font-size: var(--font-size-xs);
   font-weight: 400;
-  color: #999;
+  color: #666;
 }
 
 .project__screenshot img {
@@ -564,21 +576,21 @@ body {
 .screenshot-caption {
   padding: 12px 16px;
   font-size: var(--font-size-sm);
-  color: var(--color-secondary);
-  background: var(--color-white);
+  color: #999;
+  background: #2a2a2a;
 }
 
 .project__arch-intro {
   font-size: var(--font-size-md);
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-white);
   margin-bottom: 16px;
   line-height: 1.6;
 }
 
 .project__arch-label {
   font-size: var(--font-size-xs);
-  color: #999999;
+  color: #c9a827;
   font-weight: 600;
   margin-bottom: 12px;
   letter-spacing: 1px;

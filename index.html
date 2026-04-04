@@ -86,31 +86,37 @@
         <h2 class="section__title">이런 문제를 풀어왔습니다</h2>
       </div>
 
-      <!-- Project 1 -->
+      <!-- 공통 PSR — 큰 스토리 -->
+      <div class="project__psr project__psr--vertical">
+        <div class="psr psr--problem psr--large">
+          <div class="psr__label">PROBLEM</div>
+          <p class="psr__title">종목이 수백 개인데, 사람이 하나씩 챙겨야 합니다.</p>
+          <p class="psr__desc">호가 운영, 공시 확인, 배당 반영, 잔고 관리 — 종목마다 해야 할 일이 쌓입니다. 한 종목이라도 놓치면 바로 손실로 이어집니다.</p>
+        </div>
+        <div class="psr__arrow psr__arrow--down">↓</div>
+        <div class="psr psr--solution psr--large">
+          <div class="psr__label">SOLUTION</div>
+          <p class="psr__title">전부 자동화하고, 이상 상황만 알려주는 시스템.</p>
+          <p class="psr__desc">공시 자동 파싱, 배당·잔고 자동 반영, 종목 일괄 관리. 사람은 예외 상황에만 개입합니다.</p>
+        </div>
+        <div class="psr__arrow psr__arrow--down">↓</div>
+        <div class="psr psr--result psr--large">
+          <div class="psr__label">RESULT</div>
+          <p class="psr__title">트레이더가 관리 대신 매매에만 집중합니다.</p>
+          <p class="psr__desc">수백 종목을 동시에 운영하면서도 운영 리스크는 최소화. 시스템이 관리하고, 사람은 판단합니다.</p>
+        </div>
+      </div>
+
+      <!-- 구현 사례 소개 -->
+      <div class="portfolio__cases-header">
+        <p class="portfolio__cases-intro">이 문제를 두 영역에서 풀었습니다.</p>
+      </div>
+
+      <!-- Case 1 -->
       <div class="project">
         <div class="project__header">
           <div>
-            <div class="project__number">PROJECT 01</div>
             <h3 class="project__title">주식파생 시장조성 / 차익거래</h3>
-          </div>
-        </div>
-        <div class="project__psr project__psr--vertical">
-          <div class="psr psr--problem psr--large">
-            <div class="psr__label">PROBLEM</div>
-            <p class="psr__title">종목이 수백 개인데, 사람이 하나씩 챙겨야 합니다.</p>
-            <p class="psr__desc">공시 확인, 배당 반영, 잔고 관리, 호가 운영 — 종목마다 해야 할 일이 쌓입니다. 한 종목이라도 놓치면 바로 손실로 이어집니다.</p>
-          </div>
-          <div class="psr__arrow psr__arrow--down">↓</div>
-          <div class="psr psr--solution psr--large">
-            <div class="psr__label">SOLUTION</div>
-            <p class="psr__title">전부 자동화하고, 이상 상황만 알려주는 시스템.</p>
-            <p class="psr__desc">공시 자동 파싱, 배당·잔고 자동 반영, 종목 일괄 관리. 사람은 예외 상황에만 개입합니다.</p>
-          </div>
-          <div class="psr__arrow psr__arrow--down">↓</div>
-          <div class="psr psr--result psr--large">
-            <div class="psr__label">RESULT</div>
-            <p class="psr__title">트레이더가 관리 대신 매매에만 집중합니다.</p>
-            <p class="psr__desc">수백 종목을 동시에 운영하면서도 운영 리스크는 최소화. 시스템이 관리하고, 사람은 판단합니다.</p>
           </div>
         </div>
         <div class="project__strategies">
@@ -139,87 +145,63 @@
           <div class="project__arch-label">SYSTEM OVERVIEW</div>
           <svg class="arch-svg" viewBox="0 0 720 170" xmlns="http://www.w3.org/2000/svg">
             <!-- KRX -->
-            <rect x="20" y="20" width="160" height="80" rx="10" fill="#f3f3f0" stroke="#d4d4d4"/>
-            <text x="100" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">거래소 (KRX)</text>
-            <text x="100" y="72" text-anchor="middle" font-size="11" fill="#6b6b6b">시세 수신 · 주문 전송</text>
-            <text x="100" y="130" text-anchor="middle" font-size="11" fill="#1a1a1a">시장 데이터의</text>
-            <text x="100" y="147" text-anchor="middle" font-size="11" fill="#1a1a1a">시작과 끝</text>
+            <rect x="20" y="20" width="160" height="80" rx="10" fill="#2a2a2a" stroke="#3a3a3a"/>
+            <text x="100" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">거래소 (KRX)</text>
+            <text x="100" y="72" text-anchor="middle" font-size="11" fill="#999">시세 수신 · 주문 전송</text>
+            <text x="100" y="130" text-anchor="middle" font-size="11" fill="#cccccc">시장 데이터의</text>
+            <text x="100" y="147" text-anchor="middle" font-size="11" fill="#cccccc">시작과 끝</text>
             <!-- Bidirectional Arrow 1 -->
-            <line x1="190" y1="55" x2="250" y2="55" stroke="#d4d4d4" stroke-width="2"/>
-            <polygon points="250,50 260,55 250,60" fill="#d4d4d4"/>
-            <line x1="260" y1="65" x2="200" y2="65" stroke="#d4d4d4" stroke-width="2"/>
-            <polygon points="200,60 190,65 200,70" fill="#d4d4d4"/>
+            <line x1="190" y1="55" x2="250" y2="55" stroke="#555" stroke-width="2"/>
+            <polygon points="250,50 260,55 250,60" fill="#555"/>
+            <line x1="260" y1="65" x2="200" y2="65" stroke="#555" stroke-width="2"/>
+            <polygon points="200,60 190,65 200,70" fill="#555"/>
             <!-- Server -->
-            <rect x="270" y="10" width="200" height="100" rx="12" fill="#1a1a1a"/>
-            <text x="370" y="48" text-anchor="middle" font-size="16" font-weight="700" fill="#ffffff">서버</text>
-            <text x="370" y="70" text-anchor="middle" font-size="11" fill="#c9a827">전략 실행 · 호가 · 리스크</text>
-            <text x="370" y="88" text-anchor="middle" font-size="11" fill="#999">시스템의 핵심</text>
-            <text x="370" y="135" text-anchor="middle" font-size="11" fill="#1a1a1a">전략 로직, 주문 처리,</text>
-            <text x="370" y="152" text-anchor="middle" font-size="11" fill="#1a1a1a">리스크 관리를 수행</text>
+            <rect x="270" y="10" width="200" height="100" rx="12" fill="#c9a827"/>
+            <text x="370" y="48" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a1a">서버</text>
+            <text x="370" y="70" text-anchor="middle" font-size="11" fill="#3d3510">전략 실행 · 호가 · 리스크</text>
+            <text x="370" y="88" text-anchor="middle" font-size="11" fill="#5a4e10">시스템의 핵심</text>
+            <text x="370" y="135" text-anchor="middle" font-size="11" fill="#cccccc">전략 로직, 주문 처리,</text>
+            <text x="370" y="152" text-anchor="middle" font-size="11" fill="#cccccc">리스크 관리를 수행</text>
             <!-- Bidirectional Arrow 2 -->
-            <line x1="480" y1="55" x2="540" y2="55" stroke="#d4d4d4" stroke-width="2"/>
-            <polygon points="540,50 550,55 540,60" fill="#d4d4d4"/>
-            <line x1="550" y1="65" x2="490" y2="65" stroke="#d4d4d4" stroke-width="2"/>
-            <polygon points="490,60 480,65 490,70" fill="#d4d4d4"/>
+            <line x1="480" y1="55" x2="540" y2="55" stroke="#555" stroke-width="2"/>
+            <polygon points="540,50 550,55 540,60" fill="#555"/>
+            <line x1="550" y1="65" x2="490" y2="65" stroke="#555" stroke-width="2"/>
+            <polygon points="490,60 480,65 490,70" fill="#555"/>
             <!-- Web · Desktop -->
-            <rect x="560" y="20" width="150" height="80" rx="10" fill="#faf6eb" stroke="#e8dbb3"/>
-            <text x="635" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="#3d3510">Web · Desktop</text>
-            <text x="635" y="72" text-anchor="middle" font-size="11" fill="#92700a">모니터링 · 조작</text>
-            <text x="635" y="130" text-anchor="middle" font-size="11" fill="#1a1a1a">트레이더가 직접</text>
-            <text x="635" y="147" text-anchor="middle" font-size="11" fill="#1a1a1a">사용하는 화면</text>
+            <rect x="560" y="20" width="150" height="80" rx="10" fill="#2a2a2a" stroke="#3a3a3a"/>
+            <text x="635" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Web · Desktop</text>
+            <text x="635" y="72" text-anchor="middle" font-size="11" fill="#999">모니터링 · 조작</text>
+            <text x="635" y="130" text-anchor="middle" font-size="11" fill="#cccccc">트레이더가 직접</text>
+            <text x="635" y="147" text-anchor="middle" font-size="11" fill="#cccccc">사용하는 화면</text>
           </svg>
           <div class="project__screenshots">
             <div class="project__screenshot">
-              <div class="screenshot-placeholder">
-                <span>대시보드 메인 화면</span>
-                <span class="screenshot-placeholder__sub">스크린샷 교체 예정</span>
-              </div>
-              <div class="screenshot-caption">실시간 대시보드 — 종목별 상태를 한눈에 파악</div>
+              <img src="assets/dashboard.png" alt="실시간 대시보드" loading="lazy">
+              <div class="screenshot-caption">실시간 대시보드 — 손익, 체결, 호가, 서버 상태를 한눈에</div>
             </div>
             <div class="project__screenshot">
-              <div class="screenshot-placeholder">
-                <span>포지션 모니터링</span>
-                <span class="screenshot-placeholder__sub">스크린샷 교체 예정</span>
-              </div>
-              <div class="screenshot-caption">포지션 현황 — 종목별 포지션·손익 실시간 추적</div>
+              <img src="assets/book-pnl.png" alt="북 상세 손익" loading="lazy">
+              <div class="screenshot-caption">북 상세 손익 — 북별 이론·평가·실현 손익 실시간 추적</div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Project 2 -->
+      <!-- Case 2 -->
       <div class="project">
         <div class="project__header">
           <div>
-            <div class="project__number">PROJECT 02</div>
             <h3 class="project__title">ETF LP (Market Making & 통합헤지)</h3>
           </div>
         </div>
-        <div class="project__psr project__psr--vertical">
-          <div class="psr psr--problem psr--large">
-            <div class="psr__label">PROBLEM</div>
-            <p class="psr__title">NAV 차익, 스프레드 전략, 포트폴리오 헤지를 따로 돌리고 있습니다.</p>
-            <p class="psr__desc">전략마다 별도 시스템, 별도 모니터링. 기회는 놓치고, 헤지는 중복되고, 비효율이 쌓입니다.</p>
-          </div>
-          <div class="psr__arrow psr__arrow--down">↓</div>
-          <div class="psr psr--solution psr--large">
-            <div class="psr__label">SOLUTION</div>
-            <p class="psr__title">다중 전략과 통합 헤지를 하나의 시스템으로.</p>
-            <p class="psr__desc">NAV 차익 자동 포착, 스프레드 기반 수익 전략, 포트폴리오 통합 헤지가 하나의 엔진에서 돌아갑니다.</p>
-          </div>
-          <div class="psr__arrow psr__arrow--down">↓</div>
-          <div class="psr psr--result psr--large">
-            <div class="psr__label">RESULT</div>
-            <p class="psr__title">헤지 비용은 줄이고, 수익 기회는 극대화.</p>
-            <p class="psr__desc">전략 간 포지션이 자동으로 상계되고, 리스크를 실시간으로 파악할 수 있게 됐습니다.</p>
-          </div>
-        </div>
         <div class="project__strategies">
-          <div class="project__strategies-label">구현 전략</div>
-          <div class="project__strategies-list">
-            <span class="strategy-tag">NAV 차익 자동 포착</span>
-            <span class="strategy-tag">스프레드 기반 수익 전략</span>
-            <span class="strategy-tag">포트폴리오 통합 헤지</span>
+          <div class="project__strategies-group">
+            <div class="project__strategies-label">구현 전략</div>
+            <div class="project__strategies-list">
+              <span class="strategy-tag">NAV 차익 자동 포착</span>
+              <span class="strategy-tag">스프레드 기반 수익 전략</span>
+              <span class="strategy-tag">포트폴리오 통합 헤지</span>
+            </div>
           </div>
         </div>
         <div class="project__arch">
@@ -227,29 +209,29 @@
           <div class="project__arch-label">STRATEGY OVERVIEW</div>
           <svg class="arch-svg" viewBox="0 0 720 180" xmlns="http://www.w3.org/2000/svg">
             <!-- 3 Strategy boxes -->
-            <rect x="0" y="20" width="200" height="70" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
-            <text x="100" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a5f">NAV 차익 포착</text>
-            <text x="100" y="70" text-anchor="middle" font-size="10" fill="#64748b">실시간 괴리율 모니터링</text>
+            <rect x="0" y="20" width="200" height="70" rx="8" fill="#2a2a2a" stroke="#3a3a3a"/>
+            <text x="100" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">NAV 차익 포착</text>
+            <text x="100" y="70" text-anchor="middle" font-size="10" fill="#999">실시간 괴리율 모니터링</text>
 
-            <rect x="260" y="20" width="200" height="70" rx="8" fill="#f0fdf4" stroke="#bbf7d0"/>
-            <text x="360" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#14532d">스프레드 전략</text>
-            <text x="360" y="70" text-anchor="middle" font-size="10" fill="#64748b">Market Making</text>
+            <rect x="260" y="20" width="200" height="70" rx="8" fill="#2a2a2a" stroke="#3a3a3a"/>
+            <text x="360" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">스프레드 전략</text>
+            <text x="360" y="70" text-anchor="middle" font-size="10" fill="#999">Market Making</text>
 
-            <rect x="520" y="20" width="200" height="70" rx="8" fill="#fef3c7" stroke="#fde68a"/>
-            <text x="620" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#78350f">포트폴리오 헤지</text>
-            <text x="620" y="70" text-anchor="middle" font-size="10" fill="#64748b">통합 리스크 관리</text>
+            <rect x="520" y="20" width="200" height="70" rx="8" fill="#2a2a2a" stroke="#3a3a3a"/>
+            <text x="620" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">포트폴리오 헤지</text>
+            <text x="620" y="70" text-anchor="middle" font-size="10" fill="#999">통합 리스크 관리</text>
 
             <!-- Arrows down -->
-            <line x1="100" y1="95" x2="100" y2="115" stroke="#cbd5e1" stroke-width="2"/>
-            <polygon points="95,115 100,125 105,115" fill="#cbd5e1"/>
-            <line x1="360" y1="95" x2="360" y2="115" stroke="#cbd5e1" stroke-width="2"/>
-            <polygon points="355,115 360,125 365,115" fill="#cbd5e1"/>
-            <line x1="620" y1="95" x2="620" y2="115" stroke="#cbd5e1" stroke-width="2"/>
-            <polygon points="615,115 620,125 625,115" fill="#cbd5e1"/>
+            <line x1="100" y1="95" x2="100" y2="115" stroke="#555" stroke-width="2"/>
+            <polygon points="95,115 100,125 105,115" fill="#555"/>
+            <line x1="360" y1="95" x2="360" y2="115" stroke="#555" stroke-width="2"/>
+            <polygon points="355,115 360,125 365,115" fill="#555"/>
+            <line x1="620" y1="95" x2="620" y2="115" stroke="#555" stroke-width="2"/>
+            <polygon points="615,115 620,125 625,115" fill="#555"/>
 
             <!-- Unified Engine -->
-            <rect x="60" y="125" width="600" height="50" rx="10" fill="#0f172a"/>
-            <text x="360" y="155" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">통합 실행 엔진</text>
+            <rect x="60" y="125" width="600" height="50" rx="10" fill="#c9a827"/>
+            <text x="360" y="155" text-anchor="middle" font-size="14" font-weight="700" fill="#1a1a1a">통합 실행 엔진</text>
           </svg>
           <div class="project__screenshots">
             <div class="project__screenshot">
