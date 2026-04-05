@@ -618,12 +618,48 @@ body {
   color: var(--color-secondary);
 }
 
+/* Track Record */
+.track-record__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.track-record__item {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-primary);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+  padding-left: 24px;
+}
+
+.track-record__item::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.track-record__item:last-child {
+  border-bottom: none;
+}
+
 /* Screenshots */
+.screenshot-context {
+  font-size: var(--font-size-sm);
+  color: #999;
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
 .project__screenshots {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  margin-top: 24px;
 }
 
 .project__screenshots .project__screenshot {
