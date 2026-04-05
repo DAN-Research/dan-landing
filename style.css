@@ -618,6 +618,41 @@ body {
   color: var(--color-secondary);
 }
 
+/* Common Features Cards */
+.common-features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.common-feature__card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.common-feature__icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.common-feature__title {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .common-features__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Track Record */
 .track-record__list {
   display: flex;
