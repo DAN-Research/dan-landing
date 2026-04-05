@@ -178,7 +178,7 @@ body {
 }
 
 .nav__logo {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-xl);
   font-weight: 800;
   color: var(--color-primary);
   text-decoration: none;
