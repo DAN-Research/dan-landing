@@ -311,6 +311,49 @@ body {
   margin-bottom: 40px;
 }
 
+/* === Trust Statements === */
+.trust__card {
+  padding: 24px;
+  border-left: 3px solid var(--color-accent);
+}
+
+.trust__card-title {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.trust__card-desc {
+  font-size: var(--font-size-base);
+  color: var(--color-secondary);
+  line-height: 1.7;
+}
+
+/* === Products === */
+.products__cards {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.product__card {
+  background: var(--color-light-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--card-radius);
+  padding: 24px;
+  text-align: center;
+}
+
+.product__card-title {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .products__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* === About === */
 .about__card {
   background: var(--color-white);
   border-radius: var(--card-radius);
@@ -546,8 +589,15 @@ body {
 .module-card__title {
   font-size: var(--font-size-lg);
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   color: var(--color-primary);
+}
+
+.module-card__desc {
+  font-size: var(--font-size-base);
+  color: var(--color-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
 }
 
 .module-card__features {
@@ -768,13 +818,47 @@ body {
 
 /* === Contact === */
 .contact__inner {
-  max-width: 480px;
+  max-width: 640px;
   margin: 0 auto;
 }
 
 .contact__header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 36px;
+}
+
+.contact__reasons {
+  list-style: none;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact__reasons li {
+  font-size: var(--font-size-base);
+  color: var(--color-secondary);
+  padding-left: 16px;
+  position: relative;
+}
+
+.contact__reasons li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.contact__guide {
+  font-size: var(--font-size-base);
+  color: var(--color-primary);
+  line-height: 1.7;
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--color-white);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
 }
 
 .contact__form {
